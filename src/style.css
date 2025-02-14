@@ -62,12 +62,12 @@ select {
   font-size: 18px;
   border-color: #898aa6;
   /* arrow */
-  /* appearance: none;
+  appearance: none;
   color: #898aa6;
   background-image: url("../src/dropdown-arrow-svgrepo-com.svg");
   background-repeat: no-repeat;
   background-position: right 0.7rem top 55%;
-  background-size: 1rem auto; */
+  background-size: 1rem auto;
 }
 
 footer {
