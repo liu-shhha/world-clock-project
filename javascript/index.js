@@ -28,7 +28,13 @@ setInterval(updateTime, 1000);
 
 function updateCity(event) {
   let cityTimeZone = event.target.value;
+  if (cityTimeZone === "current") {
+    cityTimeZone = moment.tz.guess();
+  }
   cityName = cityTimeZone.replace("_", " ").split("/")[1];
+  if (cityName === "Kiev") {
+    cityName = "Kyiv";
+  }
   let cityTime = moment().tz(cityTimeZone);
   let citiesElement = document.querySelector("#cities");
   citiesElement.innerHTML = `
