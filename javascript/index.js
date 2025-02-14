@@ -1,4 +1,13 @@
 function updateTime() {
+  let kyivElement = document.querySelector("#kyiv");
+  if (kyivElement) {
+    let kyivDateElement = kyivElement.querySelector(".date");
+    let kyivTimeElement = kyivElement.querySelector(".time");
+    let kyivTime = moment().tz("Europe/kyiv");
+
+    kyivDateElement.innerHTML = kyivTime.format("MMMM Do YYYY");
+    kyivTimeElement.innerHTML = kyivTime.format("h:mm:ss [<small>]A[</small>]");
+  }
   let newYorkElement = document.querySelector("#new-york");
   if (newYorkElement) {
     let newYorkDateElement = newYorkElement.querySelector(".date");
@@ -47,6 +56,7 @@ function updateCity(event) {
                   "h:mm:ss [<small>]A[</small>]"
                 )}</div>
             </div>
+            <div><a href="/">← return to all cities</a></div>
   `;
 }
 
