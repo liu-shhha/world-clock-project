@@ -6,7 +6,7 @@ body {
 
 .container {
   display: block;
-  margin: 50px auto;
+  margin: 50px auto 30px auto;
   padding: 30px;
   border-radius: 10px;
   max-width: 600px;
@@ -25,7 +25,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   margin: 20px 0;
-  padding: 20px 0;
+  padding: 10px 0;
   border-bottom: 1px dashed rgba(160, 160, 164, 0.2);
 }
 
@@ -55,6 +55,7 @@ h2 {
 }
 
 select {
+  cursor: pointer;
   display: block;
   width: 100%;
   padding: 10px;
@@ -72,6 +73,7 @@ select {
 
 footer {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 a {
